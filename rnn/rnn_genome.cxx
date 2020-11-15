@@ -547,6 +547,10 @@ void RNN_Genome::set_weights(const vector<double> &parameters) {
 
 }
 
+void RNN_Genome::set_weight_initialize(WeightType _weight_init) {
+    weight_initialize = _weight_init;
+}
+
 uint32_t RNN_Genome::get_number_inputs() {
     uint32_t number_inputs = 0;
 
